@@ -1,0 +1,84 @@
+/*
+Dark Blue - #001F3F
+Medium Blue - #3A6D8C
+Light Blue - #6A9AB0
+Gray/White - #EAD8B1
+*/
+#contact-me-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+#send-message-header {
+    color: #ffffff;
+    text-align: center;
+    border-bottom: #3A6D8C 2px solid;
+}
+
+#contact-me-form-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-me-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#contact-me-form > input {
+    text-shadow: 0px 0px #ffffff
+}
+
+textarea {
+    text-shadow: 0px 0px #ffffff
+}
+
+#contact-form-me-container { 
+    width: 75%;
+}
+
+#message-input {
+    height: 50px;
+}
+
+#contact-me-form-submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    text-shadow: none;
+    color: #ffffff;
+    border: 2px solid #3A6D8C;
+    background-color: #3A6D8C;
+}
+
+#contact-me-form-submit:hover {
+    animation-name: hover-link;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#my-contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#my-contact-heading {
+    color: #ffffff;
+    border-bottom:#001F3F 1px solid;
+}
+
+#contact-info-container {
+    color: #ffffff;
+}

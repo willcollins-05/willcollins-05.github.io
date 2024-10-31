@@ -1,0 +1,119 @@
+/*
+Dark Blue - #001F3F
+Medium Blue - #3A6D8C
+Light Blue - #6A9AB0
+Gray/White - #EAD8B1
+*/
+.about-me-text {
+    text-shadow: #001F3F 1px 1 10px;
+    max-width: 80%;
+    text-align: justify;
+}
+
+.about-me-heading {
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    border-bottom: 2px solid #3A6D8C;
+}
+
+#about-me-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#about-me-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-content: baseline;
+    background-color: #6A9AB0;
+    width: 80%;
+}
+
+.about-me-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#personality-traits-list {
+    margin-top: 0px;
+}
+
+
+#hard-skills-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 25px;
+    width: 80%;
+    font-size: 14px;
+}
+
+.hard-skills-grid-data {
+    text-align: left;
+}
+
+#hard-skills-grid-caption {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-bottom: solid #3A6D8C 2px;
+}
+
+.hard-skills-grid {
+    grid-column: 1 / 6;
+}
+
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    width: 100%;
+}
+
+.center-item-column {
+    display: flex;
+    flex-direction:column;
+    grid-column: 1 / 6;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#personality-trait-header {
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    border-bottom: solid #3A6D8C 2px;
+}
+
+@media screen and (max-width: 1000px){
+    #webpage-title {
+        font-size: 45px;
+    }
+    
+    nav {
+        height: 50px;
+    }
+    
+    #about-me-main-div {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #hard-skills-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

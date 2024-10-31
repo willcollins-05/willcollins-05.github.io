@@ -1,0 +1,36 @@
+/*
+Dark Blue - #001F3F
+Medium Blue - #3A6D8C
+Light Blue - #6A9AB0
+Gray/White - #EAD8B1
+*/
+#main-div-personal-portfolio {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: #6a9ab0;
+    color: white;
+}
+
+.portfolio-card {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.portfolio-card > h2 {
+    border-bottom: 2px solid #3A6D8C;
+}
+
+.portfolio-card > p {
+    text-align: center;
+}
+
+video {
+    text-shadow: 0px 0px #ffffff
+}
