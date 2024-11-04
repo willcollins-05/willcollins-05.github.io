@@ -1,4 +1,4 @@
-### William Long-Collins Personal Website
+## William Long-Collins Personal Website
 A website containing information about myself.
 
 ## About Me
