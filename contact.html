@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <title>The Music Store - Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/navbar_controls.js" async></script>
+  </head>
+  <body>
+    <!-- Navbar on every page -->
+    <nav class="flex justify-between p-4 bg-dark-purple text-off-white">
+      <div onclick="location.href='index.html'" class="cursor-pointer">
+        <h1 class="text-xl lg:text-2xl font-bold whitespace-nowrap font-header">
+          The Music Store
+        </h1>
+      </div>
+      <div class="flex items-center">
+        <button
+          id="menu-btn"
+          class="lg:hidden"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <i class="material-icons" id="menu-icon">menu</i>
+        </button>
+        <ul id="nav-links" class="flex space-x-4 hidden lg:flex font-header">
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Login | Signup</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="background-image h-full w-full">
+      <main class="max-w-4xl mx-auto px-4 py-8">        
+        <form action="#" class="p-6 bg-white rounded-md shadow-md space-y-6">
+          <h2 class="text-center text-2xl font-semibold mb-8 font-header underline text-purple">Contact Us</h2>
+          <div class="font-body">
+            <label for="name" class="block font-bold mb-1">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name..."
+              required
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2"
+            />
+          </div>
+          <div class="font-body">
+            <label for="email" class="block font-bold mb-1"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address..."
+              required
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2"
+            />
+          </div>
+          <div class="font-body">
+            <label for="phone" class="block font-bold mb-1"
+              >Phone Number</label
+            >
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number..."
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2"
+            />
+          </div>
+          <div class="font-body">
+            <label for="subject" class="block font-bold mb-1">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject..."
+              required
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2"
+            />
+          </div>
+          <div class="font-body">
+            <label for="message" class="block font-bold mb-1">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message..."
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2"
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="px-6 py-2 bg-purple font-body rounded-md font-bold">
+              Submit Message
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <!-- Footer on every page -->
+    <footer class="flex flex-col justify-center items-center lg:items-start bg-dark-purple text-off-white">
+      <div
+        class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start font-header"
+      >
+        <h2 class="text-xl font-bold">The Music Store</h2>
+        <ul
+          class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2"
+        >
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <p class="p-6 self-center lg:self-end text-gray-300">
+        &copy; 2025 The Music Store. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

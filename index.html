@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/navbar_controls.js" async></script>
+    <title>The Music Store</title>
+  </head>
+  <body>
+    <!-- Navbar on every page -->
+    <nav class="flex justify-between p-4 bg-dark-purple text-off-white">
+      <div onclick="location.href='index.html'" class="cursor-pointer">
+        <h1 class="text-xl lg:text-2xl font-bold whitespace-nowrap font-header">
+          The Music Store
+        </h1>
+      </div>
+      <div class="flex items-center">
+        <button
+          id="menu-btn"
+          class="lg:hidden"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <i class="material-icons" id="menu-icon">menu</i>
+        </button>
+        <ul id="nav-links" class="flex space-x-4 hidden lg:flex font-header">
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Login | Signup</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Image Scroller -->
+      <div class="relative w-full h-96">
+        <span class="material-icons absolute top-1/2 left-4 -translate-y-1/2"
+          >chevron_left</span
+        >
+        <img
+          srcset="
+            ./images/GuitarOnFloor_577.webp  577w,
+            ./images/GuitarOnFloor_1010.webp 1010w,
+            ./images/GuitarOnFloor_1260.webp 1260w,
+            ./images/GuitarOnFloor_1470.webp 1470w,
+            ./images/GuitarOnFloor_1920.webp 1920w,
+          "
+          sizes="(max-width: 619px) 552px, 100vw"
+          alt="Image of a guitar laying on the floor"
+          src="./images/GuitarOnFloor_577.webp"
+          class="w-full h-full object-cover"
+        />
+        <span class="material-icons absolute top-1/2 right-4 -translate-y-1/2"
+          >chevron_right</span
+        >
+      </div>
+      <div class="flex flex-col m-6">
+        <h2 class="text-xl font-bold underline font-header text-purple">Recommended Products</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center">
+          <div class="flex flex-col p-6 max-w-sm lg:max-w-4xl shadow-lg">
+            <img
+              srcset="./images/acousticGuitar.webp 500w, ./images/acousticGuitar_50.webp 250w"
+              sizes="(min-width: 360px) 240px, calc(90vw - 66px)"
+              src="./images/acousticGuitar_50.webp"
+              alt="Image of an acoustic guitar"
+              class="self-center w-60 h-auto"
+            />
+            <h3 class="text-lg font-semibold font-body">Acoustic Guitar</h3>
+            <div class="flex justify-between items-center">
+              <h4 class="font-body">$259.99</h4>
+              <button class="bg-purple font-body p-2 rounded-md font-bold">See Product Page</button>
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:flex-col p-6 max-w-sm lg:max-w-4xl shadow-lg">
+            <img
+              srcset="./images/bassGuitar.webp 500w, ./images/bassGuitar_50.webp 250w"
+              sizes="240px"
+              src="./images/bassGuitar_50.webp"
+              alt="Image of a bass guitar"
+              class="self-center w-60 h-auto"
+            />
+            <h3 class="text-lg font-semibold font-body">Electric Bass</h3>
+            <div class="flex justify-between items-center">
+              <h4 class="font-body">$1,499.00</h4>
+              <button class="bg-purple font-body p-2 rounded-md font-bold">See Product Page</button>
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:flex-col p-6 max-w-sm lg:max-w-4xl shadow-lg">
+            <img
+              srcset="./images/electricGuitar.webp 466w, ./images/electricGuitar_50.webp 233w"
+              sizes="240px"
+              src="./images/electricGuitar_50.webp"
+              alt="Image of an electric guitar"
+              class="self-center w-60 h-auto"
+            />
+            <h3 class="text-lg font-semibold font-body">Electric Guitar</h3>
+            <div class="flex justify-between items-center ">
+              <h4 class="font-body">$1,999.99</h4>
+              <button class="bg-purple font-body p-2 rounded-md font-bold">See Product Page</button>
+            </div>
+          </div>
+        </div>
+        <div class="self-center m-4">
+          <!-- Style this link like a button -->
+          <a href="product.html" class="bg-purple font-body p-2 rounded-md font-bold">See All Products</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer on every page -->
+    <footer class="flex flex-col justify-center items-center lg:items-start bg-dark-purple text-off-white">
+      <div
+        class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start font-header"
+      >
+        <h2 class="text-xl font-bold">The Music Store</h2>
+        <ul
+          class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2"
+        >
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <p class="p-6 self-center lg:self-end text-off-white">
+        &copy; 2025 The Music Store. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+.background-image {
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    position: relative;
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/GuitarOnFloor_577.webp') center/cover no-repeat;
+    filter: grayscale(100%);
+    z-index: -1;
+}
+
+.no-grayscale {
+    filter: grayscale(0%);
+}
+
+/* If I was using tailwind without the cdn I would create these color profiles in the config for tailwind */
+
+.bg-dark-purple {
+    background-color: #75708a;
+}
+
+.bg-purple {
+    background-color: #bca0bc;
+}
+
+.text-off-white {
+    color: #fffcff;
+}
+
+.text-purple {
+    color: #bca0bc
+}
+
+.text-off-blue {
+    color: #83a0a0;
+}
+
+.text-green {
+    color: #7b9e87;
+}
+
+.font-header {
+    font-family: 'Fredoka', cursive;
+}
+
+.font-body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
